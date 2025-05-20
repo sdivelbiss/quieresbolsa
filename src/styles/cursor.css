@@ -1,0 +1,6 @@
+/* Custom cursor styles */
+* {
+  cursor:
+    url("/cursor-bag.png") 16 16,
+    auto;
+}
