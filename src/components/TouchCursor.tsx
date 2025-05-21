@@ -41,11 +41,11 @@ function TouchCursor() {
         isTouching ? "block" : "hidden"
       }`}
       style={{
-        left: touchPosition.x - 16, // We still need these in style
-        top: touchPosition.y - 16, // as they're dynamic values
+        left: touchPosition.x - 64, // We still need these in style
+        top: touchPosition.y - 64, // as they're dynamic values
       }}
     >
-      <img src="/cursor-bag.png" width="32" height="32" />
+      <img src="/cursor-bag.png" width="128" height="128" />
     </div>
   );
 }
