@@ -13,6 +13,7 @@ import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary";
 import { NotFound } from "~/components/NotFound";
 import appCss from "~/styles/app.css?url";
 import { seo } from "~/utils/seo";
+import TouchCursor from "~/components/TouchCursor";
 
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient;
@@ -137,6 +138,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <TanStackRouterDevtools position="bottom-right" />
         <ReactQueryDevtools buttonPosition="bottom-left" />
         <Scripts />
+        <TouchCursor />
       </body>
     </html>
   );
